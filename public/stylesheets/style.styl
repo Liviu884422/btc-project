@@ -1,0 +1,76 @@
+@import 'nib'
+
+global-reset()
+main-color = #2196F3
+
+body
+  font-family 'Consolas'
+  background-color #f5f5dc
+  font-size 10px
+
+header
+  clearfix()
+  h1
+    font-family 'Consolas'
+    font-size 3rem
+    text-align center
+    padding 4rem 4rem
+    width 15rem
+    background-color main-color
+    border-radius 20rem
+    margin 1rem 0 0 1rem
+    float left
+
+  .header-container
+    background-color white
+    border 1px solid darken(#f5f5dc,20)
+    float right
+    padding 5px
+    margin 1rem 1rem 0 0
+
+  .last-values
+    float left
+    .last
+      background-color lighten(#f5f5dc,20)
+      border 1px solid darken(#f5f5dc,30)
+      margin 1rem 0 0 1rem 
+    .highest
+      background-color lighten(#f5f5dc,20)
+      border 1px solid darken(#f5f5dc,30)
+      margin 1rem 0 0 1rem
+    .lowest
+      background-color lighten(#f5f5dc,20)
+      border 1px solid darken(#f5f5dc,30)
+      margin 1rem 0 0 1rem
+
+
+.container
+  clearfix()
+  font-size 1rem
+  .main-title
+    text-align center
+    margin-bottom 1rem
+    font-size 3rem
+  .main-wrapp
+    margin-top 6rem
+    padding 4rem 2rem
+    background-color #FFF
+  .clickx2-button
+    background-color #78bf8f
+    margin-right 0
+    float right
+    border none
+    padding 1rem
+    border-radius 3px
+
+.main-content
+  width 100%
+
+footer
+  text-align center
+  margin auto auto
+  border-top 1px solid black
+  padding-top 1rem
+  padding-bottom 1rem
+  font-size 12px
+  background-color pink

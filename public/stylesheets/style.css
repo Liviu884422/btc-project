@@ -1,0 +1,187 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+body {
+  font-family: 'Consolas';
+  background-color: #f5f5dc;
+  font-size: 10px;
+}
+header {
+  zoom: 1;
+}
+header:before,
+header:after {
+  content: "";
+  display: table;
+}
+header:after {
+  clear: both;
+}
+header h1 {
+  font-family: 'Consolas';
+  font-size: 3rem;
+  text-align: center;
+  padding: 4rem 4rem;
+  width: 15rem;
+  background-color: #2196f3;
+  -webkit-border-radius: 20rem;
+  border-radius: 20rem;
+  margin: 1rem 0 0 1rem;
+  float: left;
+}
+header .header-container {
+  background-color: #fff;
+  border: 1px solid #dede8d;
+  float: right;
+  padding: 5px;
+  margin: 1rem 1rem 0 0;
+}
+header .last-values {
+  float: left;
+}
+header .last-values .last {
+  background-color: #fff;
+  border: 1px solid #d3d365;
+  margin: 1rem 0 0 1rem;
+}
+header .last-values .highest {
+  background-color: #fff;
+  border: 1px solid #d3d365;
+  margin: 1rem 0 0 1rem;
+}
+header .last-values .lowest {
+  background-color: #fff;
+  border: 1px solid #d3d365;
+  margin: 1rem 0 0 1rem;
+}
+.container {
+  zoom: 1;
+  font-size: 1rem;
+}
+.container:before,
+.container:after {
+  content: "";
+  display: table;
+}
+.container:after {
+  clear: both;
+}
+.container .main-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+.container .main-wrapp {
+  margin-top: 6rem;
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+.container .clickx2-button {
+  background-color: #78bf8f;
+  margin-right: 0;
+  float: right;
+  border: none;
+  padding: 1rem;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.main-content {
+  width: 100%;
+}
+footer {
+  text-align: center;
+  margin: auto auto;
+  border-top: 1px solid #000;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 12px;
+  background-color: #ffc0cb;
+}

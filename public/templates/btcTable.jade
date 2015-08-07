@@ -1,0 +1,17 @@
+table(class='table-bordered table-hover',id='table')
+  thead
+    tr
+      th High
+      th Low
+      th Last
+      th Volume
+      th Timestamp
+  tbody
+    each dataPoint in dataPointsList
+      tr
+        td #{dataPoint.high}
+        td #{dataPoint.low}
+        td #{dataPoint.last}
+        td #{dataPoint.volume}
+        td #{dataPoint.timestamp}
+

@@ -1,0 +1,31 @@
+extend layout
+block stylesheets
+  link(rel='stylesheet',href='/stylesheets/index.css')
+  
+block content
+  .buttons-container
+   input.btn.btn-primary.tooltip-viewport-bottom(type='button',value='Hide/show chart',onClick='displayChart()',title='This button removes or displays the chart when pressed.')
+   input.btn.btn-primary.tooltip-viewport-bottom(type='button',value='Hide/show table',onClick='displayTable()',title='This button removes or displays the table when pressed.')
+   input.btn.btn-primary.tooltip-viewport-bottom(type='button',value='Profile',title='This button currently does nothing.')
+   input.btn.btn-primary.tooltip-viewport-bottom(type='button',value='Sign out',onClick="location.href='/signout'",title='This button logs out the user and redirects him to the Portal.')
+  #chart-container
+    h1#h1
+      |BTC Chart
+    #canvas-wrapper
+      canvas#btcChart
+
+  .table-container
+    h2#h2
+      |BTC Table
+    #table
+
+block scripts
+  script(src='/javascripts/external_scripts/Chart.js')
+  script(src='/javascripts/external_scripts/moment.js')
+  script(src='/templates/btcTable.js')
+  script(src='/javascripts/views/index/dataPointsList.js')
+  script(src='/javascripts/external_scripts/jquery.min.js')
+  script(src='/javascripts/external_scripts/bootstrap.min.js')
+  script(src='/javascripts/extrashit.js')
+
+

@@ -1,0 +1,27 @@
+doctype
+html
+	head
+		title Main page
+		link(rel='stylesheet',href='/javascripts/external_scripts/bootstrap.min.css')
+		link(rel='stylesheet',href='/stylesheets/style.css')
+		script(src = '/javascripts/external_scripts/Dom.js')
+		script(src = '/javascripts/external_scripts/runtime.js')
+		block stylesheets
+	body
+		header
+			.header
+				h1
+					p BTC
+					p Data
+				.header-container
+					canvas#headerChart(width=500,heigh=200)
+				.last-values
+					.last
+					.highest
+					.lowest
+				script(src='/javascripts/views/index/headerChart.js')
+		.container
+			block content
+			block scripts
+		footer
+			p Powered by Express, Node and other magical stuff.

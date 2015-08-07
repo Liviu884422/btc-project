@@ -1,0 +1,44 @@
+{
+  "name": "myapp",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "express": "*",
+    "jade": "*",
+    "stylus": "*",
+    "nib": "*",
+    "morgan": "*",
+    "request": "*",
+    "later": "*",
+    "mysql": "*",
+    "moment": "*",
+    "jquery": "*",
+    "HTTPRequest": "*",
+    "passport":"*",
+    "passport-local":"*",
+    "connect-flash":"*",
+    "bcrypt-nodejs":"*",
+    "body-parser":"*",
+    "cookie-parser":"*",
+    "method-override":"*",
+    "express-session":"*"
+  },
+  "devDependencies": {
+    "async":"*",
+    "glob":"*",
+    "gulp": "~3.9.0",
+    "gulp-coffee":"*",
+    "gulp-concat":"*",
+    "gulp-define-module":"*",
+    "gulp-jade":"*",
+    "gulp-replace":"*",
+    "gulp-util":"*",
+    "nib":"*"
+  }
+}
