@@ -4,8 +4,8 @@ block stylesheets
   
 block content
   .buttons-container
-   input.btn.btn-primary.tooltip-viewport-bottom.chartButton(type='button',value='Hide/show chart',onClick='displayChart()',title='This button removes or displays the chart when pressed.')
-   input.btn.btn-primary.tooltip-viewport-bottom(type='button',value='Hide/show table',onClick='displayTable()',title='This button removes or displays the table when pressed.')
+   input.btn.btn-primary.tooltip-viewport-bottom#chartButton(type='button',value='Hide/show chart',title='This button removes or displays the chart when pressed.')
+   input.btn.btn-primary.tooltip-viewport-bottom#tableButton(type='button',value='Hide/show table',title='This button removes or displays the table when pressed.')
    input.btn.btn-primary.tooltip-viewport-bottom(type='button',value='Profile',title='This button currently does nothing.')
    input.btn.btn-primary.tooltip-viewport-bottom(type='button',value='Sign out',onClick="location.href='/signout'",title='This button logs out the user and redirects him to the Portal.')
   #chart-container
