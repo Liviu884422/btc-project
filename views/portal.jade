@@ -2,7 +2,7 @@ doctype
 html
   head
     title Home page
-    link(rel='stylesheet',href='/javascripts/external_scripts/bootstrap.min.css')
+    link(rel='stylesheet',href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet',href='/stylesheets/style.css')
     link(rel='stylesheet',href='/stylesheets/portal.css')
   body
@@ -12,9 +12,9 @@ html
         .col-md-6.col-md-offset-3
           .buttons-container
             .form-group
-              input.form-control(type='button',value='Do not have an account? Click here to register',onClick="location.href='/signup'")
+              a.btn.btn-primary(href='/signup') Do not have an account? Click here to register.
             .form-group
-              input.form-control(type='button',value='Already have an account? Click here to login',onClick="location.href='/login'")
+              a.btn.btn-primary(href='/login') Already have an account? Click here to login.   
     footer
       p Powered by Express, Node and other magical stuff.
 

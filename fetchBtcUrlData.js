@@ -1,16 +1,16 @@
-var request = require("request")
-var models = require("./models")
+var request = require("request");
+var models = require("./models");
 var url = 'http://www.bitstamp.net/api/ticker/';
 
-var data = models.btcModel
+var btcModel = models.btcModel;
 
-var getData = { getAllData: function() {
+var fetchBtcUrlData = { fetchBtcUrlData: function() {
 	request({
 	    url: url,
 	    json: true
 	}, function (error, response, body) {
 	    if (!error && response.statusCode === 200) {
-			data.create({
+			btcModel.create({
 				high:body.high,
 				low:body.low,
 				last:body.last,
@@ -18,16 +18,8 @@ var getData = { getAllData: function() {
 				volume:body.volume
 			})
 	    }
-
 	})
-
-	// data.findAll()
-	// .then(function(data) {
-	// 	data.map(function(d){
-	// 		console.log(d.last)
-	// 	})
-	// })
 }}
 	
-module.exports = getData;
+module.exports = fetchBtcUrlData;
 

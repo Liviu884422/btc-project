@@ -2,7 +2,7 @@ doctype
 html
 	head
 		title Main page
-		link(rel='stylesheet',href='/javascripts/external_scripts/bootstrap.min.css')
+		link(rel='stylesheet',href='/stylesheets/bootstrap.min.css')
 		link(rel='stylesheet',href='/stylesheets/style.css')
 		script(src = '/javascripts/external_scripts/Dom.js')
 		script(src = '/javascripts/external_scripts/runtime.js')
@@ -19,9 +19,10 @@ html
 					.last
 					.highest
 					.lowest
-				script(src='/javascripts/views/index/headerChart.js')
+				
 		.container
 			block content
 			block scripts
 		footer
 			p Powered by Express, Node and other magical stuff.
+		script(src='/javascripts/views/index/headerChart.js')

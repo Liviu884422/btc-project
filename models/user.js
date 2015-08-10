@@ -6,16 +6,6 @@ module.exports = function(sequelize,DataTypes) {
     password:DataTypes.STRING
   },{
     timestamps:false,
-    instanceMethods: {
-      validPassword: function(password) {
-        return bcrypt.compareSync(password,this.password)
-      }
-    },
-    classMethods: {
-      validPassword: function(password) {
-        return bcrypt.compareSync(password,this.password)
-      }
-    }
   }
 )};
 

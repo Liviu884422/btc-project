@@ -8,4 +8,3 @@ function displayChart() {
   Dom("#h1").toggle();
 };
 
-
